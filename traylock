@@ -24,7 +24,6 @@ class SystrayLockConfig:
     color_10: tuple = (200, 0, 0)
     max_idle_time_s: float = 600
     period_s: float = 10
-    lock_cmd: str = "lock"
 
     def __post_init__(self):
         for k, fun in self.__annotations__.items():
